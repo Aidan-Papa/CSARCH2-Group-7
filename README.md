@@ -1,4 +1,5 @@
 **July 2 - Pages and Styles started**
+
 Updated by: Raine Guarin
 
 - Created "working" folder to store drafts and assets before finalizing to proper framework format

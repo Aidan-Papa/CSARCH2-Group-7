@@ -12,4 +12,7 @@ Updated by: Raine Guarin
 
 Updated by: Mikyla Aguirre
 - Created MacGuiExhibit.jsx, the current layout right now is it swap the contents where the sidebar era buttons is clicked. (DELETE () IF DONE: IF U GUYS WANT TO IMPLEMENT IT DIFFERENTLY ITS OKAY)
-- 
+
+Updated by: Raine Guarin
+- Minor changes to layout and main page
+- Tried implementing logic to change backgrounds to an image depending on the era but it didn't work :(

@@ -54,6 +54,7 @@ export const eras = [
       mainBg: '#3d8f88',
       mainBgImage: 'none',
       headerBg: '#dcdcdc',
+      headerBorderStyle: 'dashed',
     },
     body: [
       { type: 'p', text: "The PowerPC era marked one of the largest architectural transitions in Macintosh history. Apple abandoned the Motorola 68k processors that had powered the Mac since 1984 and adopted the PowerPC architecture, developed jointly by Apple, IBM, and Motorola. Unlike the earlier 68k processors, PowerPC used RISC (Reduced Instruction Set Computer) architecture, which simplified instruction execution and allowed the processor to complete more work per clock cycle." },
@@ -90,12 +91,6 @@ export const eras = [
     id: 'era4',
     navLabel: 'Era 4',
     title: 'Mac OS X | 2001',
-    theme: {
-      mainBg: '#31427B',
-      mainBgImage: 'none',
-      headerBg: '#dcdcdc',
-      mainFont: 'EB Garamond',
-    },
     body: [
     ],
   },
@@ -108,6 +103,6 @@ export const eras = [
   },
 ];
 
-<ClassicOsLayout title="History of the Macintosh Computer">
+<ClassicOsLayout title="History of Macintosh Computer GUIs">
     <MacGuiExhibit client:load appleLogoSrc={appleLogo.src} eras={eras} />
 </ClassicOsLayout>

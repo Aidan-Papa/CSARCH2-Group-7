@@ -19,11 +19,17 @@ const { title } = Astro.props;
     /* Adding 'is:global' ensures these styles apply to the whole document, just like your old CSS file */
     @import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
     * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
         font-family: "Roboto Mono", monospace;
+
+        button, input, select, textarea, span, div, h1, h2, h3, h4, h5, p, a {
+        font-family: inherit;
+    }
     }
     html, body {
         width: 100%;
@@ -70,6 +76,13 @@ const { title } = Astro.props;
         font-size: 28px;
         font-weight: bold;
     }
+
+    .header-left h3{
+        padding-left: 7px;
+        font-size: 15px;
+        font-weight: normal;
+    }
+
 
     .apple-logo-img {
         height: 30px;

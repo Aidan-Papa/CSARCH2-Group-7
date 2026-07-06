@@ -8,7 +8,7 @@ Updated by: Raine Guarin
 
 --------------- Ashton did smth with the astro framework palagay nalangg what u did ------------------
 
-**July 6 - Clickable Eras and **
+**July 5 - Clickable Eras and Content**
 
 Updated by: Mikyla Aguirre
 - Created MacGuiExhibit.jsx, the current layout right now is it swap the contents where the sidebar era buttons is clicked. (DELETE () IF DONE: IF U GUYS WANT TO IMPLEMENT IT DIFFERENTLY ITS OKAY)
@@ -17,6 +17,11 @@ Updated by: Mikyla Aguirre
 - Added content from content outline for classic Mac OS, plus added subheadings for each machine. No images yet but the code for it is commented as placeholder.
 - Added era 3 contents, images not added yet too
 
+**July 6 - More edit and content continuation**
 Updated by: Raine Guarin
 - Minor changes to layout and main page
 - Tried implementing logic to change backgrounds to an image depending on the era but it didn't work :(
+
+Updated by: Mikyla Aguirre
+- Completed adding the content for the all eras
+- Added the era 6 working sidebar button and complete content, still havent added the pictures tho

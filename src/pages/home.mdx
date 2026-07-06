@@ -1,0 +1,108 @@
+import ClassicOsLayout from '../layouts/ClassicOsLayout.astro';
+//import ClassicOsLayout from '../layouts/ClassicOsLayout.astro';
+import MacGuiExhibit from '../components/MacGuiExhibit.jsx';
+
+import appleLogo from '../assets/apple-black.png';
+import ibmPcjr from '../assets/ibm-pcjr.png';
+import appleLisa from '../assets/lisa-apple.png';
+
+export const eras = [
+  {
+    id: 'era1',
+    navLabel: 'Era 1',
+    title: 'The Birth of the Macintosh | 1984 - 1990',
+    body: [
+      { type: 'p', text: "The original Macintosh (1984) marked a major shift in personal computing by making graphical computing accessible to everyday users. Unlike earlier personal computers that emphasized technical capability, the Macintosh focused on usability through a graphical user interface (GUI), built-in display, mouse input, and an integrated all-in-one design." },
+      { type: 'p', text: "At the time, the Mac's main rival for the home user market was the IBM PCjr, which had a 14-inch monitor." },
+      { type: 'img', src: ibmPcjr.src, alt: 'IBM PCjr', caption: 'The IBM PCjr' },
+      { type: 'p', text: "It was not the first computer to use a mouse. It was not even the first computer from Apple to be or have any of these things. The Apple Lisa, released a year before, had them all." },
+      { type: 'img', src: appleLisa.src, alt: 'Apple Lisa', caption: 'The Apple Lisa' },
+      { type: 'p', text: "The Macintosh revolutionized the personal computing industry and everything that was to follow because of its emphasis on providing a satisfying, simplified user experience." },
+      { type: 'p', text: "Architecturally, the Macintosh used the Motorola 68000, a single-core 16/32-bit processor running effectively at 6 MHz. It included 128 KB of RAM, which was extremely limited even for its time. Apple originally designed the machine with memory support only for 128 KB, but engineers quietly added extra address lines that made later expansion to 512 KB possible through unofficial hardware modifications." },
+      { type: 'p', text: "This period showed a broader architectural transition: computers were no longer improving only through faster processors—they were becoming easier to interact with." },
+    ],
+  },
+  {
+    id: 'era2',
+    navLabel: 'Era 2',
+    title: 'Classic Mac OS Era | 1984 - 1993',
+    body: [
+      { type: 'subheading', text: 'Macintosh Plus (1986): Bumped the RAM and introduced SCSI peripheral support.' },
+      // { type: 'img', src: , alt: 'Macintosh Plus', caption: 'Macintosh Plus' },
+      { type: 'p', text: "The Macintosh Plus improved everyday computing by addressing one of the original Macintosh's biggest limitations: memory capacity. Using the same single-core Motorola 68000 architecture at 7.8 MHz, the Macintosh Plus increased baseline memory to 1 MB RAM (later 2–4 MB configurations) and introduced SCSI support, allowing faster external storage and peripherals. It also adopted the Hierarchical File System (HFS) for better file organization." },
+      { type: 'p', text: "Despite improvements, memory remained limited because of motherboard addressing constraints and the absence of a dedicated Memory Management Unit (MMU)." },
+
+      { type: 'subheading', text: 'Macintosh SE (1987): Brought internal expansion capabilities to the compact lineup.' },
+      // { type: 'img', src: , alt: 'Macintosh SE', caption: 'Macintosh SE' },
+      { type: 'p', text: "The Macintosh SE introduced a more expandable architecture while retaining the Motorola 68000 platform. Running at 7.8 MHz, the SE improved overall responsiveness through faster memory access and a redesigned system architecture. Most importantly, it introduced the Processor Direct Slot (PDS), allowing hardware upgrades and accelerator cards. This reflected a shift in computing design: systems were beginning to prioritize expandability rather than fixed hardware." },
+
+      { type: 'subheading', text: 'Macintosh Portable (1989): Bringing Macintosh computing into mobility.' },
+      // { type: 'img', src: , alt: 'Macintosh Portable', caption: 'Macintosh Portable' },
+      { type: 'p', text: "Apple's Macintosh Portable represented an early attempt at mobile computing and laid foundations for later portable Mac systems. Powered by a 16 MHz Motorola 68000 and equipped with 1 MB of SRAM, it achieved noticeably faster responsiveness compared to the original Macintosh 128K primarily because the clock speed was more than doubled, also it used expensive, high-speed Static RAM (SRAM), which eliminated the severe memory-access wait states and bottlenecks present in the original desktop Mac. This allowed it to achieve a much faster, more responsive \"instant on\" sleep mode and high overall performance for its time." },
+      { type: 'p', text: "Did you know that the Macintosh Portable weighed a massive 16 pounds (7.3 kg), and a huge chunk of that weight came from its power source: it ran on a sealed lead-acid battery, which is essentially the exact same chemical technology used to start a gasoline car. Because of how its power management was wired, the computer physically could not boot up without a charged battery installed, even if you had it plugged directly into the wall outlet." },
+
+      { type: 'subheading', text: 'Macintosh Classic (1990): Offered an affordable entry point into the Mac ecosystem.' },
+      // { type: 'img', src: , alt: 'Macintosh Classic', caption: 'Macintosh Classic' },
+      { type: 'p', text: "Using the same Motorola 68000 architecture at 7.8 MHz, it maintained compatibility while reducing cost, becoming Apple's first Macintosh to sell below $1,000. Performance was roughly on par with the older Macintosh SE, delivering up to a 25 percent speed improvement over the Macintosh Plus primarily through refined logic board efficiencies and the inclusion of Apple's 1.44 MB SuperDrive floppy disk controller. The machine shipped in two configurations offering either 1 MB or 2 MB of RAM, but it faced strict physical memory limitations maxing out at 4 MB, a ceiling that could only be reached by installing a specialized, proprietary memory expansion card. The Classic reflected a new stage of computing evolution: making graphical personal computing accessible to a wider audience." },
+    ],
+  },
+  {
+    id: 'era3',
+    navLabel: 'Era 3',
+    title: 'PowerPC | 1994',
+    theme: {
+      mainBg: '#3d8f88',
+      mainBgImage: 'none',
+      headerBg: '#dcdcdc',
+      headerBorderStyle: 'dashed',
+    },
+    body: [
+      { type: 'p', text: "The PowerPC era marked one of the largest architectural transitions in Macintosh history. Apple abandoned the Motorola 68k processors that had powered the Mac since 1984 and adopted the PowerPC architecture, developed jointly by Apple, IBM, and Motorola. Unlike the earlier 68k processors, PowerPC used RISC (Reduced Instruction Set Computer) architecture, which simplified instruction execution and allowed the processor to complete more work per clock cycle." },
+      { type: 'p', text: "This shift improved overall efficiency rather than simply increasing processor speed. The transition also introduced more advanced system capabilities, including integrated Memory Management Units (MMU) for virtual memory support and built-in software compatibility layers that allowed older Macintosh applications to continue running during the migration." },
+
+      { type: 'subheading', text: 'Power Macintosh 6100' },
+      // { type: 'img', src: , alt: 'Power Macintosh 6100', caption: 'Power Macintosh 6100' },
+      { type: 'p', text: "Released in March 1994, the Power Macintosh 6100 became Apple's first mainstream desktop to adopt PowerPC architecture. It was powered by a single-core PowerPC 601 processor, utilizing a 32-bit architecture with a 64-bit data path and running at 60 MHz." },
+      { type: 'p', text: "Performance improved dramatically compared to earlier Motorola-based systems because the RISC design executed instructions in fewer cycles while maintaining software compatibility through a built-in 68LC040 software emulator stored inside the 4 MB system ROM." },
+      { type: 'p', text: "The system shipped with 8 MB of RAM, and unlike previous Macintosh generations, memory became virtual through the integrated MMU, allowing inactive data to be temporarily stored on the hard drive. Native memory officially reached 72 MB, although unofficial upgrades pushed this further. This machine established the architectural foundation that the rest of the PowerPC era would build upon." },
+
+      { type: 'subheading', text: 'PowerBook 500 series' },
+      // { type: 'img', src: , alt: 'PowerBook 500 series', caption: 'PowerBook 500 series' },
+      { type: 'p', text: "Although introduced during the PowerPC era, the PowerBook 500 series still relied on the older single-core Motorola 68LC040 architecture, operating at 25 MHz or 33 MHz depending on model." },
+      { type: 'p', text: "Rather than introducing new processor technology, its innovation came from internal design. Apple mounted the processor on a removable daughtercard, making the notebook upgradeable to a 100 MHz PowerPC 603e later on. This made it one of Apple's first portable systems designed with long-term architectural transition in mind." },
+      { type: 'p', text: "The machines shipped with 4 MB or 12 MB of RAM, supported virtual memory, and separated graphics processing through 512 KB of dedicated VRAM instead of sharing system memory." },
+
+      { type: 'subheading', text: 'Twentieth Anniversary Macintosh' },
+      // { type: 'img', src: , alt: 'Twentieth Anniversary Macintosh', caption: 'Twentieth Anniversary Macintosh' },
+      { type: 'p', text: "By 1997, PowerPC architecture had matured and Apple shifted toward integrating computing performance with multimedia capability." },
+      { type: 'p', text: "The Twentieth Anniversary Macintosh used a single-core PowerPC 603ev processor running at 250 MHz, a major increase from the first Power Macintosh systems. Although it inherited much of the internal architecture of the Power Macintosh 6500 series, it demonstrated how PowerPC performance had evolved to support multimedia workloads." },
+      { type: 'p', text: "It shipped with 32 MB of RAM and paired its processor with an ATI 3D RAGE II graphics processor and 2 MB of dedicated SGRAM VRAM, allowing the built-in display to operate at 800 × 600 resolution with 16-bit color. Despite its premium positioning, critics often considered its performance modest relative to its cost." },
+
+      { type: 'subheading', text: 'iMac G3' },
+      // { type: 'img', src: , alt: 'iMac G3', caption: 'iMac G3' },
+      { type: 'p', text: "The iMac G3 brought PowerPC computing into the mainstream and demonstrated that architectural efficiency could matter more than raw processor speed." },
+      { type: 'p', text: "Powered by the single-core PowerPC 750 (G3), clock speeds began at 233 MHz and eventually reached 700 MHz across later revisions. However, its biggest performance gain came from the addition of a backside Level 2 cache, which operated independently from main memory and reduced delays when accessing frequently used data." },
+      { type: 'p', text: "Memory configurations expanded throughout production, eventually supporting up to 1 GB of RAM, while graphics processing evolved from the ATI Rage IIc to the ATI Rage 128 Ultra with up to 16 MB of dedicated VRAM." },
+      { type: 'p', text: "Architecturally, the iMac also reduced reliance on large motherboard ROM systems through the adoption of Common Hardware Reference Platform (CHRP) standards, helping simplify startup behavior and future hardware development." },
+      { type: 'p', text: "The iMac G3 helped redefine consumer computing by standardizing USB connectivity and making internet access part of the default desktop experience." },
+    ],
+  },
+  {
+    id: 'era4',
+    navLabel: 'Era 4',
+    title: 'Mac OS X | 2001',
+    body: [
+    ],
+  },
+  {
+    id: 'era5',
+    navLabel: 'Era 5',
+    title: 'Intel Mac | 2009',
+    body: [
+    ],
+  },
+];
+
+<ClassicOsLayout title="History of Macintosh Computer GUIs">
+    <MacGuiExhibit client:load appleLogoSrc={appleLogo.src} eras={eras} />
+</ClassicOsLayout>

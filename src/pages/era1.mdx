@@ -1,4 +1,5 @@
 import ClassicOsLayout from '../layouts/ClassicOsLayout.astro';
+//import ClassicOsLayout from '../layouts/ClassicOsLayout.astro';
 import MacGuiExhibit from '../components/MacGuiExhibit.jsx';
 
 import appleLogo from '../assets/apple-black.png';
@@ -102,6 +103,6 @@ export const eras = [
   },
 ];
 
-<ClassicOsLayout title="History of Macintosh Computer GUIs">
+<ClassicOsLayout title="History of the Macintosh Computer">
     <MacGuiExhibit client:load appleLogoSrc={appleLogo.src} eras={eras} />
 </ClassicOsLayout>

@@ -25,3 +25,7 @@ Updated by: Raine Guarin
 Updated by: Mikyla Aguirre
 - Completed adding the content for the all eras
 - Added the era 6 working sidebar button and complete content, still havent added the pictures tho
+
+**July 7 - References**
+Updated by: Enrique Cruz
+- Added a reference portion and inserted it into era 6

@@ -6,7 +6,12 @@ Updated by: Raine Guarin
 - Created the first page (Birth of Macintosh) using HTML
 - Created the first CSS stylesheet (Classic Mac OS)
 
---------------- Ashton did smth with the astro framework palagay nalangg what u did ------------------
+**July 4 - Pages and Styles started**
+
+Updated by: Ashton Ching
+- Started on .astro framework implementation
+- Updated base css to .astro
+- Updated base html to .mdx
 
 **July 5 - Clickable Eras and Content**
 

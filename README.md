@@ -33,4 +33,10 @@ Updated by: Mikyla Aguirre
 
 **July 12 - Working the Website**
 Updated by: Mikyla Aguirre
-- I changed a filename from "MacGuiExhibit" to "GuiExhibit" on our last commit last minute after everyone has tested if the website was working (which it did) before passing for the Case study project #2 Mid-milestone submission deadline, but then I forgot to change the era1.mdx and home.mdx imports which we found was why the website was not accessible
+- I changed a filename from 'MacGuiExhibit' to 'GuiExhibit' on our last commit last minute after everyone has tested if the website was working (which it did) before passing for the Case study project #2 Mid-milestone submission deadline, but then I forgot to change the era1.mdx and home.mdx imports which we found was why the website was not accessible
+
+**July 20 - Museum merge compliance fixes**
+Updated by: Mikyla Aguirre
+- Renamed our custom layout from `ClassicOsLayout.astro` to `S05_Group7_ClassicOsLayout.astro` to follow announcement post about the naming convention for custom layouts, and updated the imports in era1.mdx and home.mdx to match
+- Scoped all of our custom layout's CSS and GuiExhibit.jsx class names under an `s05g7-` prefix (was using generic names like `.header`, `.sidebar`, bare `a`, and even `html, body`) so our styles won't bleed into or clash with other groups' pages once everything is merged into the umbrella museum site
+- Removed the old "working" folder (era1.html, classic-os.css, and duplicate images) — it was leftover draft content from before we migrated to Astro/MDX and wasn't referenced anywhere anymore

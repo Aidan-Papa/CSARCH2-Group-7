@@ -16,29 +16,40 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
-    /* Adding 'is:global' ensures these styles apply to the whole document, just like your old CSS file */
+    /* Adding 'is:global' ensures these styles apply to the whole document, just like your old CSS file.
+    * All selectors are scoped under .s05g7-* prefixes so they don't collide with other groups'
+    * pages when merged into the umbrella museum site. */
     @import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
     @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
-    * {
+    .s05g7-main-container,
+    .s05g7-main-container * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
         font-family: "Roboto Mono", monospace;
+    }
 
-        button, input, select, textarea, span, div, h1, h2, h3, h4, h5, p, a {
+    .s05g7-main-container button,
+    .s05g7-main-container input,
+    .s05g7-main-container select,
+    .s05g7-main-container textarea,
+    .s05g7-main-container span,
+    .s05g7-main-container div,
+    .s05g7-main-container h1,
+    .s05g7-main-container h2,
+    .s05g7-main-container h3,
+    .s05g7-main-container h4,
+    .s05g7-main-container h5,
+    .s05g7-main-container p,
+    .s05g7-main-container a {
         font-family: inherit;
     }
-    }
-    html, body {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background-color: #000;
-    }
 
-    .main-container {
+    .s05g7-main-container {
+        position: fixed;
+        inset: 0;
         width: 100vw;
         height: 100vh;
         background-color: var(--main-bg-color, #a9a9a9);
@@ -52,7 +63,7 @@ const { title } = Astro.props;
         overflow: hidden;
     }
 
-    .header {
+    .s05g7-header {
         background-color: var(--header-bg, #fff);
         height: 75px;
         border-bottom-width: 2px;
@@ -65,39 +76,39 @@ const { title } = Astro.props;
         box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
     }
 
-    .header-left {
+    .s05g7-header-left {
         display: flex;
         align-items: center;
         gap: 8px;
     }
 
-    .header-left span{
+    .s05g7-header-left span{
         padding-left: 7px;
         font-size: 28px;
         font-weight: bold;
     }
 
-    .header-left h3{
+    .s05g7-header-left h3{
         padding-left: 7px;
         font-size: 15px;
         font-weight: normal;
     }
 
 
-    .apple-logo-img {
+    .s05g7-apple-logo-img {
         height: 30px;
         width: auto;
         display: inline-block;
         vertical-align: middle;
     }
 
-    .header-right {
+    .s05g7-header-right {
         text-align: right;
         font-size: 15px;
         line-height: 1.2;
     }
 
-    .workspace {
+    .s05g7-workspace {
         display: flex;
         flex: 1;
         padding: 20px;
@@ -106,7 +117,7 @@ const { title } = Astro.props;
         height: calc(100vh - 38px);
     }
 
-    .sidebar {
+    .s05g7-sidebar {
         display: flex;
         flex-direction: column;
         width: 80px;
@@ -115,13 +126,13 @@ const { title } = Astro.props;
         height: 100%;
     }
 
-    a {
+    .s05g7-main-container a {
         color: black;
         text-decoration: none;
         font-weight: bold;
     }
 
-    .sidebar button {
+    .s05g7-sidebar button {
         background: none;
         border: none;
         color: black;
@@ -132,11 +143,11 @@ const { title } = Astro.props;
         padding: 6px 10px;
     }
 
-    .sidebar button.active {
+    .s05g7-sidebar button.s05g7-active {
         text-decoration: underline;
     }
 
-    .content-window {
+    .s05g7-content-window {
         flex: none !important;
         width: 60vw;
         height: 75vh;
@@ -148,7 +159,7 @@ const { title } = Astro.props;
         box-shadow: 4px 4px 0px rgba(0,0,0,0.3);
     }
 
-    .window-header {
+    .s05g7-window-header {
         border-bottom: 2px solid #000;
         text-align: center;
         padding: 10px;
@@ -158,37 +169,37 @@ const { title } = Astro.props;
         background-color: #fff;
     }
 
-    .window-body {
+    .s05g7-window-body {
         flex: 1;
         padding: 40px;
         text-align: justify;
         font-size: 16px;
         color: #000;
-        overflow-y: auto; 
+        overflow-y: auto;
     }
 
-    .body-img {
-        display: block;        
+    .s05g7-body-img {
+        display: block;
         margin: 20px auto;
-        width: 180px;          
-        height: auto;      
+        width: 180px;
+        height: auto;
         border: 1px solid #000;
     }
 
-    .window-body h5{
+    .s05g7-window-body h5{
         padding-top: -10px;    text-align: center;
         font-size: 13px;
         font-style: italic;
         font-weight: normal;
     }
 
-    .window-body .subheading {
+    .s05g7-window-body .s05g7-subheading {
         font-weight: bold;
         margin-top: 20px;
         margin-bottom: 4px;
     }
 
-    .window-body .placeholder-note {
+    .s05g7-window-body .s05g7-placeholder-note {
         font-style: italic;
         color: #666;
         border: 1px dashed #999;

@@ -6,12 +6,17 @@ Updated by: Raine Guarin
 - Created the first page (Birth of Macintosh) using HTML
 - Created the first CSS stylesheet (Classic Mac OS)
 
---------------- Ashton did smth with the astro framework palagay nalangg what u did ------------------
+**July 4 - Pages and Styles started**
+
+Updated by: Ashton Ching
+- Started on .astro framework implementation
+- Updated base css to .astro
+- Updated base html to .mdx
 
 **July 5 - Clickable Eras and Content**
 
 Updated by: Mikyla Aguirre
-- Created MacGuiExhibit.jsx, the current layout right now is it swap the contents where the sidebar era buttons is clicked. (DELETE () IF DONE: IF U GUYS WANT TO IMPLEMENT IT DIFFERENTLY ITS OKAY)
+- Created GuiExhibit.jsx, the current layout right now is it swap the contents where the sidebar era buttons is clicked
 - Made each sidebar era buttons clickable and brings you to the next era with the titles
 - Put in colors into {theme} in era1.mdx for PowerPC Era
 - Added content from content outline for classic Mac OS, plus added subheadings for each machine. No images yet but the code for it is commented as placeholder.
@@ -25,7 +30,3 @@ Updated by: Raine Guarin
 Updated by: Mikyla Aguirre
 - Completed adding the content for the all eras
 - Added the era 6 working sidebar button and complete content, still havent added the pictures tho
-
-**July 7 - References**
-Updated by: Enrique Cruz
-- Added a reference portion and inserted it into era 6

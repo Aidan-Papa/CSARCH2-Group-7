@@ -40,3 +40,8 @@ Updated by: Mikyla Aguirre
 - Renamed our custom layout from `ClassicOsLayout.astro` to `S05_Group7_ClassicOsLayout.astro` to follow announcement post about the naming convention for custom layouts, and updated the imports in era1.mdx and home.mdx to match
 - Scoped all of our custom layout's CSS and GuiExhibit.jsx class names under an `s05g7-` prefix (was using generic names like `.header`, `.sidebar`, bare `a`, and even `html, body`) so our styles won't bleed into or clash with other groups' pages once everything is merged into the umbrella museum site
 - Removed the old "working" folder (era1.html, classic-os.css, and duplicate images) — it was leftover draft content from before we migrated to Astro/MDX and wasn't referenced anywhere anymore
+
+**July 22 - Museum merge compliance fixes**
+Updated by: Enrique Cruz
+- Reworked the old info in Era 4, content for the era almost completed, missing MacOS i.e. 2015 to present. Images not added yet.
+- Added references portion (forgot the date <3)

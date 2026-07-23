@@ -20,8 +20,8 @@ export default function MacGuiExhibit({ appleLogoSrc, eras }) {
         <div className="s05g7-header-left">
           <img src={appleLogoSrc} alt="Apple Logo" className="s05g7-apple-logo-img" />
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span>History of Macintosh Computer GUIs</span>
-            <div><h3>Read Time: 20 minutes</h3></div>
+            <span>History of the Macintosh Computer</span>
+            <div><h3>Read Time: 30 minutes</h3></div>
           </div>
         </div>
         <div className="s05g7-header-right">

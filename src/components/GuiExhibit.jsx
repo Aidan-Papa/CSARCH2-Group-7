@@ -51,16 +51,7 @@ export default function MacGuiExhibit({ appleLogoSrc, eras }) {
         </nav>
 
         <main className="s05g7-content-window">
-          <div className="s05g7-window-header">{active.title}
-          {active.titleImg && (
-            <img 
-                src={active.titleImg}
-                alt="appleeralogo"
-                style={{ height: '70px', width: 'auto', marginRight: '10px', verticalAlign: 'middle' }}
-              />
-          )}
-          </div>
-          <span>{active.title}</span>
+          <div className="s05g7-window-header">{active.title}</div>
           <div className="s05g7-window-body">
             {active.body.map((block, index) => {
               if (block.type === "img") {

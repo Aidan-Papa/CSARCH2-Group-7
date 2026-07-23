@@ -233,78 +233,72 @@ const { title } = Astro.props;
 
 /*for mobile compat*/
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 
     html, body {
-        overflow: auto;
+        overflow: auto !important;
     }
 
-    .main-container {
-        height: auto;
+    .main-container, ._s05g7-main-container, s05g7-main-container {
+        height: auto !important;
         min-height: 100vh;
-        border-radius: 0; 
+        border-radius: 0 !important;
     }
 
-    /* 2. Fix the Header */
-    .header {
-        height: auto;
-        padding: 10px;
-        flex-direction: column;
-        gap: 8px;
+    .header, ._s05g7-header, .s05g7-header {
+        height: auto !important;
+        padding: 10px !important;
+        flex-direction: column !important;
+        gap: 10px;
     }
 
-    .header-left span {
-        font-size: 18px; 
+    .header-left span, ._s05g7-header-left span {
+        font-size: 18px !important;
     }
 
-    .header-right {
-        text-align: center;
-        font-size: 12px;
+    .header-right, ._s05g7-header-right {
+        text-align: center !important;
+        font-size: 11px !important;
     }
 
-    .workspace {
-        flex-direction: column; 
-        padding: 10px;
-        height: auto;
-        gap: 15px;
+    .workspace, ._s05g7-workspace, .s05g7-workspace {
+        flex-direction: column !important; 
+        padding: 10px !important;       
+        height: auto !important;
+        gap: 15px !important;
     }
 
-    .sidebar {
-        width: 100%;
-        height: auto;
-        flex-direction: row;   
-        flex-wrap: wrap; 
-        justify-content: center;
-        gap: 12px;
-        padding: 8px 0;
+    .sidebar, ._s05g7-sidebar, .s05g7-sidebar {
+        width: 100% !important;
+        height: auto !important;
+        flex-direction: row !important;  
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 12px !important;
+        padding: 10px 0 !important;
         border-bottom: 2px solid #000;
     }
 
-    .content-window {
-        width: 100% !important;
-        height: auto;
-        min-height: 60vh;
+    .content-window, ._s05g7-content-window, .s05g7-content-window {
+        width: 100% !important;          
+        height: auto !important;
+        min-height: 60vh !important;
+        margin: 0 !important;
     }
 
-    .window-header {
-        font-size: 18px; /* Scale down window title font */
+    .window-header, ._s05g7-window-header {
+        font-size: 18px !important;
+        padding: 8px !important;
     }
 
-    .window-body {
-        padding: 15px;
-        font-size: 14px;
+    .window-body, ._s05g7-window-body {
+        padding: 15px !important;
+        font-size: 14px !important;
     }
 
     .body-img {
-        max-width: 100%; 
-        height: auto;
+        max-width: 100% !important;
+        height: auto !important;
     }
 }
-
-
-
-
-
-
-
 </style>

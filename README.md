@@ -46,7 +46,7 @@ Updated by: Enrique Cruz
 - Reworked the old info in Era 4, content for the era almost completed, missing MacOS i.e. 2015 to present. Images not added yet.
 - Added references portion (forgot the date <3)
 
-**July 23 - Website Finalization and Mobile Compatibility
+**July 23 - Website Finalization and Mobile Compatibility**
 Updated by: Ashton Ching and Aidan Papa
 - Started on Website Finalization(Adding leftover images and fixing missing titles)
 - Added mobile compatibility

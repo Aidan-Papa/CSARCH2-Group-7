@@ -8,7 +8,7 @@ import appleLisa from '../assets/lisa-apple.png';
 export const eras = [
   {
     id: 'era1',
-    navLabel: 'Era 1',
+    navLabel: 'Birth of the Macintosh',
     title: 'The Birth of the Macintosh | 1984 - 1990',
     body: [
       { type: 'p', text: "The original Macintosh (1984) marked a major shift in personal computing by making graphical computing accessible to everyday users. Unlike earlier personal computers that emphasized technical capability, the Macintosh focused on usability through a graphical user interface (GUI), built-in display, mouse input, and an integrated all-in-one design." },
@@ -23,7 +23,7 @@ export const eras = [
   },
   {
     id: 'era2',
-    navLabel: 'Era 2',
+    navLabel: 'Classic Mac OS',
     title: 'Classic Mac OS Era | 1984 - 1993',
     body: [
       { type: 'subheading', text: 'Macintosh Plus (1986): Bumped the RAM and introduced SCSI peripheral support.' },
@@ -47,7 +47,7 @@ export const eras = [
   },
   {
     id: 'era3',
-    navLabel: 'Era 3',
+    navLabel: 'PowerPC',
     title: 'PowerPC | 1994',
     theme: {
       mainBg: '#3d8f88',
@@ -87,7 +87,7 @@ export const eras = [
   },
   {
     id: 'era4',
-    navLabel: 'Era 4',
+    navLabel: 'OS Architecture',
     title: 'OS Architecture | 1999 - Present',
     theme: {
       mainBg: '#31427B',
@@ -132,8 +132,14 @@ export const eras = [
   },
   {
     id: 'era5',
-    navLabel: 'Era 5',
+    navLabel: 'Intel Mac',
     title: 'Intel Mac | 2009',
+    theme: {
+      mainBg: '#003550',
+      mainBgImage: 'none',
+      headerBg: '#dcdcdc',
+      mainFont: 'EB Garamond',
+    },
     body: [
       { type: 'p', text: "Before Intel had transferred to using Intel Processors they were first using PowerPC processors. Part of why they transitioned to Intel Processors was because back in 2003 Steve Jobs had announced that they planned to release the first personal computer to feature a 64-bit processor from IBM's PowerPC G5 product line, but IBM had issues with the fabrication process and added concerns from executives in the company were also concerned with the Jobs' plan." },
       { type: 'p', text: "When Apple first released their supposed 64-bit processor personal computers they were actually not 64-bit. They were actually 32-bit. The processors were known as the Intel Core Duo. But fast forward to a half a year later they were able to give improvements to their lineup via the Intel Core 2 Duo which were indeed 64-bit processors." },
@@ -167,7 +173,7 @@ export const eras = [
   },
   {
     id: 'era6',
-    navLabel: 'Era 6',
+    navLabel: 'Apple Silicon',
     title: 'Apple Silicon | 2020',
     body: [
       { type: 'p', text: "Apple Silicon marked the third major processor transition, moving from Intel to Apple Silicon. This was a result of Apple licensing ARM technology and developing its own custom Apple Silicon processors optimized specifically for Macintosh computers. This gave Apple free reign over both hardware and software design moving forward, allowing the company to optimize performance, efficiency, and battery life." },
@@ -194,35 +200,60 @@ export const eras = [
   },
   {
     id: 'era7',
-    navLabel: 'ref',
+    navLabel: 'References',
     title: 'References',
     body: [
       { type: 'p', text: "Wobbrock, J. O. (2024, January 19). Forty years ago, the Mac triggered a revolution in user experience. Smithsonian Magazine. https://www.smithsonianmag.com/innovation/forty-years-ago-the-mac-triggered-a-revolution-in-user-experience-180983623/" },
+
       { type: 'p', text: "Stromberg, J. (2014, January 23). What reviewers said about the first Mac when it debuted. Smithsonian Magazine. https://www.smithsonianmag.com/history/what-reviewers-said-about-first-mac-when-it-debuted-180949448/" },
+
       { type: 'p', text: 'Parakh, A. (2021, October 2). A brief history of Apple Computer Inc. and the Graphic User Interface. Medium. https://akshayparakh.medium.com/a-brief-history-of-apple-computer-inc-and-the-graphic-user-interface-459535cfee9e' },
+
       { type: 'p', text: 'Version Museum. (n.d.). 17 Years of Classic Mac OS design history. Version Museum. https://www.versionmuseum.com/history-of/classic-mac-os' },
       { type: 'p', text: 'Version Museum. (n.d.). 25 Years of Mac OS X design history. Version Museum. https://www.versionmuseum.com/history-of/mac-os-x' },
+
       { type: 'p', text: 'Apple. (n.d.). Mac Pro (2019) - Technical Specifications. Apple Support. https://support.apple.com/en-ph/118461' },
+
       { type: 'p', text: 'Apple. (n.d.). MacBook Pro (Late 2006) - Technical Specifications. Apple Support. https://support.apple.com/en-lb/112489' },
+
       { type: 'p', text: 'Apple Wiki contributors. (n.d.). MacBook Pro (1st generation). Apple Wiki. https://apple.fandom.com/wiki/MacBook_Pro_(1st_generation)' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). IBM PCjr. Wikipedia. https://en.wikipedia.org/wiki/IBM_PCjr' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). Apple Lisa. Wikipedia. https://en.wikipedia.org/wiki/Apple_Lisa' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). Macintosh Portable. Wikipedia. https://en.wikipedia.org/wiki/Macintosh_Portable' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). Macintosh SE. Wikipedia. https://en.wikipedia.org/wiki/Macintosh_SE' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). Macintosh Plus. Wikipedia. https://en.wikipedia.org/wiki/Macintosh_Plus' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). Macintosh Classic. Wikipedia. https://en.wikipedia.org/wiki/Macintosh_Classic' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). Mac (computer). Wikipedia. https://en.wikipedia.org/wiki/Mac_(computer)' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). PowerPC. Wikipedia. https://en.wikipedia.org/wiki/PowerPC' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). Power Macintosh 6100. Wikipedia. https://en.wikipedia.org/wiki/Power_Macintosh_6100' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). PowerBook 500 series. Wikipedia. https://en.wikipedia.org/wiki/PowerBook_500_series' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). Twentieth Anniversary Macintosh. Wikipedia. https://en.wikipedia.org/wiki/Twentieth_Anniversary_Macintosh' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). iMac G3. Wikipedia. https://en.wikipedia.org/wiki/IMac_G3' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). PowerBook G4. Wikipedia. https://en.wikipedia.org/wiki/PowerBook_G4' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). iMac G4. Wikipedia. https://en.wikipedia.org/wiki/IMac_G4' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). Power Mac G5. Wikipedia. https://en.wikipedia.org/wiki/Power_Mac_G5' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). iMac G5. Wikipedia. https://en.wikipedia.org/wiki/IMac_G5' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). MacOS version history. Wikipedia. https://en.wikipedia.org/wiki/MacOS_version_history#Releases' },
+
       { type: 'p', text: 'Wikipedia contributors. (n.d.). Mac Pro. Wikipedia. https://en.wikipedia.org/wiki/Mac_Pro' },
+      
       { type: 'p', text: 'Wikipedia contributors. (n.d.). Pro Display XDR. Wikipedia. https://en.wikipedia.org/wiki/Pro_Display_XDR' },
 
 

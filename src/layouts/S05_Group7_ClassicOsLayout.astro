@@ -243,15 +243,17 @@ const { title } = Astro.props;
         position: relative !important;
     }
 
-    .main-container, ._s05g7-main-container, .s05g7-main-container {
+    .s05g7-main-container, ._s05g7-main-container, .main-container {
+        position: relative !important; /* Unpins the container from the glass */
+        inset: auto !important;
         height: auto !important;
         min-height: 100vh !important;
         overflow: visible !important;
         border-radius: 0 !important;
-        width: 100vw !important;
+        width: 100% !important;
     }
 
-    .header, ._s05g7-header, .s05g7-header {
+    .s05g7-header, ._s05g7-header, .header {
         height: auto !important;
         padding: 12px 10px !important;
         flex-direction: column !important;
@@ -259,17 +261,26 @@ const { title } = Astro.props;
         text-align: center !important;
     }
 
-    .workspace, ._s05g7-workspace, .s05g7-workspace {
+    .s05g7-header-left span {
+        font-size: 20px !important;
+    }
+
+    .s05g7-header-right {
+        text-align: center !important;
+        font-size: 12px !important;
+    }
+
+    .s05g7-workspace, ._s05g7-workspace, .workspace {
         display: flex !important;
         flex-direction: column !important;
-        padding: 10px !important;
+        padding: 10px !important;          /* Overrides padding-left: 150px */
         height: auto !important;
         width: 100% !important;
         gap: 15px !important;
         overflow: visible !important;
     }
 
-    .sidebar, ._s05g7-sidebar, .s05g7-sidebar {
+    .s05g7-sidebar, ._s05g7-sidebar, .sidebar {
         width: 100% !important;
         height: auto !important;
         flex-direction: row !important;
@@ -280,15 +291,21 @@ const { title } = Astro.props;
         border-bottom: 2px solid #000 !important;
     }
 
-    .content-window, ._s05g7-content-window, .s05g7-content-window {
-        width: 100% !important;
+    .s05g7-content-window, ._s05g7-content-window, .content-window {
+        width: 100% !important;            /* Overrides the 60vw width */
         height: auto !important;
         margin: 0 !important;
         flex: none !important;
         overflow: visible !important;
     }
 
-    .window-body, ._s05g7-window-body {
+    .s05g7-window-header {
+        font-size: 18px !important;
+        padding: 10px !important;
+        flex-wrap: wrap !important;
+    }
+
+    .s05g7-window-body, ._s05g7-window-body, .window-body {
         padding: 15px !important;
         font-size: 14px !important;
         height: auto !important;
@@ -297,7 +314,7 @@ const { title } = Astro.props;
         -webkit-overflow-scrolling: touch;
     }
 
-    .body-img {
+    .s05g7-body-img, .body-img {
         max-width: 100% !important;
         height: auto !important;
     }

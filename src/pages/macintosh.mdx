@@ -4,6 +4,16 @@ import MacGuiExhibit from '../components/GuiExhibit.jsx';
 import appleLogo from '../assets/apple-black.png';
 import ibmPcjr from '../assets/ibm-pcjr.png';
 import appleLisa from '../assets/lisa-apple.png';
+import macPlus from '../assets/MacintoshPlus.jpg';
+import macSE from '../assets/MacintoshSE.jpg';
+import macPort from '../assets/MacintoshPortable.jpg';
+import macClass from '../assets/MacintoshClassic.jpg';
+import era1icon from '../assets/era1icon.png';
+import era2icon from '../assets/era2icon.png';
+import era3icon from '../assets/era3icon.png';
+import era4icon from '../assets/era4icon.png';
+import era5icon from '../assets/era5icon.png';
+import era6icon from '../assets/era6icon.png';
 
 export const eras = [
   {
@@ -11,6 +21,7 @@ export const eras = [
     navLabel: 'Birth of the Macintosh',
     icon: ibmPcjr.src, // TRY LANG IF IT WORKS 
     title: 'The Birth of the Macintosh | 1984 - 1990',
+    titleImg: era1icon.src,
     body: [
       { type: 'p', text: "The original Macintosh (1984) marked a major shift in personal computing by making graphical computing accessible to everyday users. Unlike earlier personal computers that emphasized technical capability, the Macintosh focused on usability through a graphical user interface (GUI), built-in display, mouse input, and an integrated all-in-one design." },
       { type: 'p', text: "At the time, the Mac's main rival for the home user market was the IBM PCjr, which had a 14-inch monitor." },
@@ -25,23 +36,25 @@ export const eras = [
   {
     id: 'era2',
     navLabel: 'Classic Mac OS',
+    title: 'The Classic Mac OS | 1986 - 1990',
+    titleImg: era1icon.src,
     body: [
       { type: 'subheading', text: 'Macintosh Plus (1986): Bumped the RAM and introduced SCSI peripheral support.' },
-      // { type: 'img', src: , alt: 'Macintosh Plus', caption: 'Macintosh Plus' },
+      { type: 'img', src: macPlus.src, alt: 'Macintosh Plus', caption: 'Macintosh Plus' },
       { type: 'p', text: "The Macintosh Plus improved everyday computing by addressing one of the original Macintosh's biggest limitations: memory capacity. Using the same single-core Motorola 68000 architecture at 7.8 MHz, the Macintosh Plus increased baseline memory to 1 MB RAM (later 2–4 MB configurations) and introduced SCSI support, allowing faster external storage and peripherals. It also adopted the Hierarchical File System (HFS) for better file organization." },
       { type: 'p', text: "Despite improvements, memory remained limited because of motherboard addressing constraints and the absence of a dedicated Memory Management Unit (MMU)." },
 
       { type: 'subheading', text: 'Macintosh SE (1987): Brought internal expansion capabilities to the compact lineup.' },
-      // { type: 'img', src: , alt: 'Macintosh SE', caption: 'Macintosh SE' },
+      { type: 'img', src: macSE.src , alt: 'Macintosh SE', caption: 'Macintosh SE' },
       { type: 'p', text: "The Macintosh SE introduced a more expandable architecture while retaining the Motorola 68000 platform. Running at 7.8 MHz, the SE improved overall responsiveness through faster memory access and a redesigned system architecture. Most importantly, it introduced the Processor Direct Slot (PDS), allowing hardware upgrades and accelerator cards. This reflected a shift in computing design: systems were beginning to prioritize expandability rather than fixed hardware." },
 
       { type: 'subheading', text: 'Macintosh Portable (1989): Bringing Macintosh computing into mobility.' },
-      // { type: 'img', src: , alt: 'Macintosh Portable', caption: 'Macintosh Portable' },
+      { type: 'img', src: macPort.src, alt: 'Macintosh Portable', caption: 'Macintosh Portable' },
       { type: 'p', text: "Apple's Macintosh Portable represented an early attempt at mobile computing and laid foundations for later portable Mac systems. Powered by a 16 MHz Motorola 68000 and equipped with 1 MB of SRAM, it achieved noticeably faster responsiveness compared to the original Macintosh 128K primarily because the clock speed was more than doubled, also it used expensive, high-speed Static RAM (SRAM), which eliminated the severe memory-access wait states and bottlenecks present in the original desktop Mac. This allowed it to achieve a much faster, more responsive \"instant on\" sleep mode and high overall performance for its time." },
       { type: 'p', text: "Did you know that the Macintosh Portable weighed a massive 16 pounds (7.3 kg), and a huge chunk of that weight came from its power source: it ran on a sealed lead-acid battery, which is essentially the exact same chemical technology used to start a gasoline car. Because of how its power management was wired, the computer physically could not boot up without a charged battery installed, even if you had it plugged directly into the wall outlet." },
 
       { type: 'subheading', text: 'Macintosh Classic (1990): Offered an affordable entry point into the Mac ecosystem.' },
-      // { type: 'img', src: , alt: 'Macintosh Classic', caption: 'Macintosh Classic' },
+      { type: 'img', src: macClass.src, alt: 'Macintosh Classic', caption: 'Macintosh Classic' },
       { type: 'p', text: "Using the same Motorola 68000 architecture at 7.8 MHz, it maintained compatibility while reducing cost, becoming Apple's first Macintosh to sell below $1,000. Performance was roughly on par with the older Macintosh SE, delivering up to a 25 percent speed improvement over the Macintosh Plus primarily through refined logic board efficiencies and the inclusion of Apple's 1.44 MB SuperDrive floppy disk controller. The machine shipped in two configurations offering either 1 MB or 2 MB of RAM, but it faced strict physical memory limitations maxing out at 4 MB, a ceiling that could only be reached by installing a specialized, proprietary memory expansion card. The Classic reflected a new stage of computing evolution: making graphical personal computing accessible to a wider audience." },
     ],
   },
@@ -49,6 +62,7 @@ export const eras = [
     id: 'era3',
     navLabel: 'PowerPC', 
     title: 'PowerPC | 1994',
+    titleImg: era2icon.src,
     theme: {
       mainBg: '#3d8f88',
       mainBgImage: 'none',
@@ -89,6 +103,7 @@ export const eras = [
     id: 'era4',
     navLabel: 'OS Architecture', 
     title: 'OS Architecture | 1999 - Present',
+    titleImg: era3icon.src,
     theme: {
       mainBg: '#31427B',
       mainBgImage: 'none',
@@ -134,6 +149,7 @@ export const eras = [
     id: 'era5',
     navLabel: 'Intel Mac',
     title: 'Intel Mac | 2009',
+    titleImg: era4icon.src,
     theme: {
       mainBg: '#003550',
       mainBgImage: 'none',
@@ -175,6 +191,7 @@ export const eras = [
     id: 'era6',
     navLabel: 'Apple Silicon', 
     title: 'Apple Silicon | 2020',
+    titleImg: era5icon.src,
     theme: {
       mainBg: '#f4dfd9',
       mainBgImage: 'none',
@@ -207,6 +224,7 @@ export const eras = [
     id: 'era7',
     navLabel: 'References', 
     title: 'References',
+    titleImg: era6icon.src,
     body: [
       { type: 'p', text: "Wobbrock, J. O. (2024, January 19). Forty years ago, the Mac triggered a revolution in user experience. Smithsonian Magazine. https://www.smithsonianmag.com/innovation/forty-years-ago-the-mac-triggered-a-revolution-in-user-experience-180983623/" },
 

@@ -32,14 +32,20 @@ export default function MacGuiExhibit({ appleLogoSrc, eras }) {
 
       <div className="s05g7-workspace">
         <nav className="s05g7-sidebar">
+          {/* TRY LANG: nav buttons now render an icon instead of text */}
           {eras.map((era) => (
             <button
               key={era.id}
               type="button"
               className={era.id === activeId ? "s05g7-active" : ""}
               onClick={() => setActiveId(era.id)}
+              title={era.navLabel}
             >
-              {era.navLabel}
+              {era.icon ? (
+                <img src={era.icon} alt={era.navLabel} className="s05g7-nav-icon" />
+              ) : (
+                era.navLabel
+              )}
             </button>
           ))}
         </nav>

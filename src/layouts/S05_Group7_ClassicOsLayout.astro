@@ -143,8 +143,21 @@ const { title } = Astro.props;
         padding: 6px 10px;
     }
 
+    /* TRY LANG: icon nav buttons */
+    .s05g7-nav-icon {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        display: block;
+    }
+
     .s05g7-sidebar button.s05g7-active {
         text-decoration: underline;
+    }
+
+    .s05g7-sidebar button.s05g7-active .s05g7-nav-icon {
+        outline: 2px solid #000;
+        border-radius: 6px;
     }
 
     .s05g7-content-window {
